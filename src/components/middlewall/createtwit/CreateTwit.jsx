@@ -17,7 +17,6 @@ function CreateTwit() {
       const obj = new Create(twit);
       setId(id + 1)
       twits.push(obj)
-      console.log(twits)
     }
     
   }
