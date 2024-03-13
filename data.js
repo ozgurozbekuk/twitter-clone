@@ -17,7 +17,7 @@ const twits = [
         date : "16 April",
     },
     {
-        id : 3,
+        id : 2,
         name : "Sonali Hirave",
         username : "ShonaDesign",
         content : "Day 07 of the challenge #100DaysOfCodeI was wondering what I can do with #tailwindcss, so just started building Twitter UI using Tailwind and so far it looks so promising. I will post my code after completion. [07/100] #WomenWhoCode #CodeNewbie",

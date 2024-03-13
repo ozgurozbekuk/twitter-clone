@@ -1,6 +1,13 @@
 import React from 'react'
 
-function TwitInput() {
+function TwitInput({createNewTwit}) {
+  
+  
+  function handleChange(e) {
+    const newTwit =e.target.value;
+    createNewTwit(newTwit) 
+  }
+
   return (
     <div className="flex">
       <div className="m-2 w-10 py-1">
@@ -12,6 +19,7 @@ function TwitInput() {
       </div>
       <div className="flex-1 px-2 pt-2 mt-2">
         <textarea
+          onChange={handleChange}
           className=" bg-transparent text-gray-400 font-medium text-lg w-full"
           rows={2}
           cols={50}

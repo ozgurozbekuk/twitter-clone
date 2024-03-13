@@ -1,7 +1,7 @@
 import React from 'react'
 import HeaderMw from './headermiddlewall/HeaderMw'
 import CreateTwit from './createtwit/CreateTwit'
-import TwitGet from './singletwit/TwitGet'
+
 
 function Middlewall() {
   return (
@@ -9,8 +9,7 @@ function Middlewall() {
     <HeaderMw/>
     <hr className="border-gray-600" />
     <CreateTwit/>
-    <hr className="border-blue-800 border-4" />
-    <TwitGet/>
+    {/* <hr className="border-blue-800 border-4" /> */}
   </div>
   )
 }
