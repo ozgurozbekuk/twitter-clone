@@ -9,7 +9,6 @@ function Middlewall() {
     <HeaderMw/>
     <hr className="border-gray-600" />
     <CreateTwit/>
-    {/* <hr className="border-blue-800 border-4" /> */}
   </div>
   )
 }

@@ -5,25 +5,24 @@ import { twits } from '../../../../data'
 import SingleTwit from './singletwit/SingleTwit'
 
 function CreateTwit() {
-  const [twit,setTwit] = useState('')
+  const [twitCont,setTwitCont] = useState('')
   const [id,setId] = useState(3)
   
-  function handleCreateTwit(newTwit) {
-    setTwit(newTwit)
+  function handleCreateTwit(twitContent) {
+    setTwitCont(twitContent)
   }
 
   function handleBtnClick() {
-    if(twit !== ""){
-      const obj = new Create(twit);
+    if(twitCont !== ""){
+      const newtwit = new Create(twitCont);
       setId(id + 1)
-      twits.push(obj)
+      twits.push(newtwit)
     }
     
   }
   
   
   
-
   function Create(content) {
 
     const currentDate = new Date();

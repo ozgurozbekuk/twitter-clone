@@ -4,8 +4,8 @@ function TwitInput({createNewTwit}) {
   
   
   function handleChange(e) {
-    const newTwit =e.target.value;
-    createNewTwit(newTwit) 
+    const twitContent = e.target.value;
+    createNewTwit(twitContent)
   }
 
   return (
